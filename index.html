@@ -1,21 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Mario Commands</title>
+	<title>Mario's Commands</title>
 	<style>
 		body {
-			background-color: #62C7E8;
-			background-image: linear-gradient(135deg, #62C7E8 0%, #E88B62 100%);
-			color: #FFF;
-			font-family: 'Press Start 2P', cursive;
-			font-size: 24px;
+			background-color: #F0F2F5;
+			font-family: Arial, sans-serif;
 			margin: 0;
 			padding: 0;
 			text-align: center;
 		}
 		h1 {
-			font-size: 48px;
-			margin: 20px 0;
+			color: #3B5998;
+			font-size: 16px;
+			margin: 30px 0;
 		}
 		.container {
 			display: flex;
@@ -32,46 +30,274 @@
 			margin: 10px;
 			padding: 20px;
 			text-align: left;
-			width: 280px;
+			width: 580px;
 		}
 		.box h2 {
-			color: #E88B62;
-			font-size: 32px;
+			color: #3B5998;
+			font-size: 18px;
 			margin: 0 0 10px;
-			text-shadow: 2px 2px #FFF;
 		}
 		.box p {
 			margin: 0;
-			text-shadow: 1px 1px #FFF;
 		}
 		.box p code {
-			background-color: #F4F4F4;
+			background-color: #F0F2F5;
 			border-radius: 5px;
 			padding: 2px 5px;
 		}
+        .sub-box {
+            background-color: #FFF;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            margin: 10px;
+            padding: 20px;
+            text-align: left;
+            width: 280px;
+    }
+
 	</style>
-	<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
 <body>
-	<h1>Mario Commands</h1>
+	<h1>MRod Commands</h1>
 	<div class="container">
-		<div class="box">
-			<h2>Move Left</h2>
-			<p>To move left, press the <code>left arrow</code> key.</p>
+		<div class="box" >
+			<h2>SQL Server</h2>
+			<ul>
+                <li>sp_who</li>
+                <li>sp_tables</li>
+                <li>sp_columns</li>
+                <li>sp_helptext</li>
+                <li>sp_msforeachdb</li>
+                <li>sys.sysfiles</li>
+                <li>sys.objects</li>
+                <li>sys.sql_modules</li>
+                <li>sys.databases</li>
+                <li>sys.master_files</li>
+                <li>install_Module -name sqlserver</li>
+                <li>dbcc shrink database</li>
+                <li>exec sp_configure</li>
+                <li>exec dbreindex</li>
+                <li>dbcc memorystatus</li>
+                <li>row_number() over (partition by column_name order by ordinal_position) as row_num</li>
+                <li>sp_executesql</li>
+            </ul>           
+            
 		</div>
 		<div class="box">
-			<h2>Move Right</h2>
-			<p>To move right, press the <code>right arrow</code> key.</p>
+            <h2>NPM</h2>
+            <div class="sub-box">
+                <ul>
+                    <li>init</li>
+                    <li>install -g</li>
+                    <li>start</li>
+                    <li>run</li>
+                    <li>build</li>
+                    <li>test</li>
+                    <li>publish</li>
+                    <li>run build</li>
+                    <li>install @microsoft/microsoft-graph-client</li>
+                    <li>install @microsoft/sp-build-web</li>
+                    <li>install @microsoft/sp-build-core-tasks</li>
+                    <li>pnp/pnpjs</li>
+                    <li>install @pnp/spfx-controls-react --save --save-exact</li>
+                    <li>install @pnp/spfx-property-controls --save --save-exact</li>                    
+                    <li>install @angular/cli</li>
+                    <li>install @angular/core</li>
+                    <li>typescript</li>
+                    <li>react</li>
+                    <li>react-dom</li>
+                    <li>react-router-dom</li>
+                    <li>npx create-react-app my-app</li>
+                    <li>npm install -g create-react-app</li>                        
+                    <li>npm install -g bower</li>                        
+                    <li>npm install -g gulp</li>
+                    <li>npm install -g yo</li>
+                    <li>npm install -g @microsoft/generator-sharepoint</li>
+                    <li>npm install -g @microsoft/generator-sharepoint-react</li>
+                    <li>npm install -g @microsoft/generator-sharepoint-ng</li>
+                    <li>npm install -g @microsoft/generator-sharepoint-webpart</li>
+                    <li>npm install -g @microsoft/generator-sharepoint-sub</li>
+                    <li>npm install -g @microsoft/generator-sharepoint-knockout</li>
+                    <li>npm install -g @microsoft/generator-sharepoint-nojs</li>
+                    <li>npm install -g @microsoft/generator-sharepoint-fullstack</li>
+                    <li>npm install -g @microsoft/generator-sharepoint-preview</li>
+                    <li>npm install -g @microsoft/generator-sharepoint-react-sub</li>
+                    <li>npm install -g @microsoft/generator-sharepoint-ng-sub</li>
+                    <li>npm install -g @microsoft/generator-sharepoint-webpart-sub</li>
+                    <li>npm install -g @microsoft/generator-sharepoint-knockout-sub</li>
+                    <li>npm install -g @microsoft/generator-sharepoint-nojs-sub</li>
+                    <li>npm install -g @microsoft/generator-sharepoint-fullstack-sub</li>
+                    <li>npm install -g @microsoft/generator-sharepoint-preview-sub</li>                    
+                </ul>>
+            </div>
+
+            <h2>Angular</h2>
+            <div class="sub-box">
+                <ul>
+                    <li>ng new app</li>
+                    <li>ng serve</li>
+                    <li>ng build</li>
+                    <li>ng test</li>
+                    <li>ng generate</li>                    
+                </ul>
+            </div>
+       	</div>
+		<div class="box">
+			<h2>Gulp</h2>
+			<ul>
+                <li>server</li>
+                <li>watch</li>
+                <li>build</li>
+                <li>default</li>
+                <li>clean</li>
+                <li>trust-dev-cert</li>
+                <li>serve-static</li>
+             </ul>
 		</div>
 		<div class="box">
-			<h2>Jump</h2>
-			<p>To jump, press the <code>up arrow</code> key.</p>
+			<h2>Yo</h2>
+            <ul>                
+                <li>yo</li>
+                <li>yo @microsoft/sharepoint</li>
+                <li>yo --generator</li>
+            </ul>
 		</div>
 		<div class="box">
-			<h2>Shoot</h2>
-			<p>To shoot, press the <code>space</code> key.</p>
+            <div class="sub-box">
+			<h2>Network</h2>
+			<ul>
+                <li>ping</li>
+                <li>nslookup</li>
+                <li>tracert</li>
+                <li>dir</li>
+                <li>ls</li>
+                <li>netuse</li>
+                <li>netstat</li>
+                <li>netsh</li>
+                <li>ipconfig</li>
+                <li>mstsc</li>
+                <li>net user</li>
+                <li>net localgroup</li>
+                <li>services.msc</li>
+                <li>appwiz.cpl</li>
+                <li>eventvwr</li>
+                <li>gpedit.msc</li>
+                <li>net start</li>
+                <li>net stop</li>
+                <li>net share</li>
+                <li>forfiles</li>
+            </ul>
+        </div>
+        <div class="sub-box">
+            <h2>Powershell</h2>
+            <ul>
+                <li>Get-Services</li>
+                <li>findstr</li>
+                <li>Get-Process</li>
+                <li>Get-ChildItem</li>
+                <li>add-pssnapin</li>
+                <li>enable-ps-remoting</li>
+                <li>enter-ps-session</li>
+                <li>get-spsites</li>
+                <li>get-spweb</li>
+                <li>invoke-sqlcmd</li>
+                <li>get-command</li>
+                <li>get-help</li>
+                <li>start-service</li>
+                <li>stop-service</li>
+                <li>get-service</li>
+                <li>write-host</li>
+            </ul>
 		</div>
 	</div>
+    <div class="box">
+        <h2>git</h2>
+        <ul>                
+            <li>init</li>
+            <li>status</li>
+            <li>config --list</li>
+            <li>add .</li>
+            <li>commit -m "message"</li>
+            <li>push</li>
+            <li>pull</li>
+            <li>clone</li>
+            <li>checkout -b branch-name</li>
+            <li>push --set-upstream origin</li>
+        </ul>
+    </div>
+    <div class="box">
+        <h2>SPO</h2>
+        <ul>
+            <li>get-spolist</li>
+            <li>get-spolistitem</li>
+            <li>get-spoexternaluser</li>
+            <li>get-spotenant cdn enabled</li>
+            <li>get-spotenant cdn origin</li>
+            <li>get-pnplistitem</li>
+            <li>get-pnplist</li>
+            <li>get-pnpaccesstokenrequest</li>
+            <li>get-pnponline</li>
+            <li>install-module microsoft.online.sharepoint</li>
+            <li>install-module sharepointpnppowershellonline</li>
+            <li>install-module sharepointpnppowershell2016</li>
+            <li>install-module sharepointpnppowershell2013</li>
+            <li>connect-sposervice</li>
+            <li>install-module -name sqlserver</li>
+            <li>import-module sqlserver</li>
+        </ul>
+    </div>
+    <div class="box">
+        <h2>dotnet</h2>
+        <ul>
+            <li>add package</li>
+            <li>new console</li>
+            <li>build</li>
+            <li>run</li>
+            <li>test</li>
+            <li>publish</li>
+        </ul>
+    </div>
+    <div class="box">
+        <h2>AWS</h2>
+        <ul>
+            <li>s3</li>
+            <li>ec2</li>
+            <li>cloudformation</li>
+            <li>cloudwatch</li>
+            <li>rds</li>
+            <li>lambda</li>
+            <li>iam</li>
+            <li>route53</li>
+            <li>cloudfront</li>
+            <li>rest</li>            
+        </ul>
+    </div>           
+    <div class="box">
+        <div class="sub-box">
+        <h2>Docker</h2>
+        <ul>
+            <li>run</li>
+            <li>build</li>
+            <li>push</li>
+            <li>pull mongo</li>
+            <li>run --name my-mongo -d mongo</li>
+            <li>run -it --rm mongo mongo</li>            
+        </ul>
+        </div>
+        <div class="sub-box">
+        <h2>From</h2>
+            <p>
+                FROM node:12
+                WORKDIR /usr/src/app
+                COPY package*.json ./
+                RUN npm install
+                COPY . .
+                EXPOSE 8080
+                CMD [ "node", "server.js" ]
+                or
+                CMD [ "npm", "start" ]
+            </p>
+        </div>
+    </div>
 </body>
 </html>
-
